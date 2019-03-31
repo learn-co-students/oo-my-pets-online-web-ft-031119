@@ -25,11 +25,11 @@ class Owner
   end
 
   def say_species
-    "I am a #{self.species}."
+    "I am a #{@species}."
   end
 
-  def buy_fish(fish)
-    self.pets[:fishes] << Fish.new(fish).tap {|f| f.name}
+  def buy_fish(name)
+    self.pets[:fishes] << Fish.new(name)
   end
 
   def buy_cat(cat)
